@@ -9,4 +9,6 @@ jobs:
     uses: YanyanLiuBio/actions-library/.github/workflows/docker-reusable.yml@main
     with:
       image_name: "test-py"
-    secrets: inherit
+    secrets:
+      DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+      DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
