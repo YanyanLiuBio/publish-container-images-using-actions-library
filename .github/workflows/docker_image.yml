@@ -2,7 +2,7 @@ name: Deploy Project
 on:
   push:
     branches: [main]
-    tags: ['v*.*.*'] # Trigger on version tags too!
+    tags: ['v*'] # Trigger on version tags too!
 
 jobs:
   call-docker-build:
